@@ -57,6 +57,7 @@ class VectorStoreAndQueryEngine:
             )
         return vector_query_engine
 
+
     def add_vector_query_engine(self, collection_name, model="gpt-4", temperature=0.4, similarity_top_k=5):      
         document_processor = DocumentProcessor(directory=self.document_directory, model=model)  
         nodes = document_processor.process_documents()
